@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": ["com5"],
+            "args": ["/dev/ttyUSB0", "NO"],
             "justMyCode": true
         }
     ]

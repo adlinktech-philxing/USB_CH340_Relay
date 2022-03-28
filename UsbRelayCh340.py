@@ -15,14 +15,14 @@ def getSerialPort(port):
        return None
 
 #
-# argument: COM# [NC|NO]
+# arguments
 #
 argc=len(sys.argv)
 if (argc>2):
-    ComPort = sys.argv[1].upper()
+    ComPort = sys.argv[1]
     Control = sys.argv[2].upper()
 else:
-    print("Usage: UsbRelayCh340 COM# [NC|NO]")        
+    print("Usage: UsbRelayCh340 [COM#|ttyUSB#] [NC|NO]")        
     sys.exit()
 
 serialPort = getSerialPort(ComPort)
